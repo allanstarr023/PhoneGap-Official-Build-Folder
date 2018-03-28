@@ -11,6 +11,43 @@
     <link rel="stylesheet" type="text/css" href="../css/themes/bootstrap.min.united.css" />
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<script>
+      jQuery(function($) {
+        $("#rss-feeds").rss("http://feeds.feedburner.com/premiumpixels", {
+          limit: 15,
+          effect: 'slideFastSynced'
+        })
+      })
+    </script>
+    <style type="text/css">
+      body > div {
+        margin: 0px auto;
+        width: 800px;
+      }
+      a {
+        color: #37D;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      li {
+        padding: 10px;
+        border-top: 1px dashed #AAA;
+        background-color: #EFEFEF;
+      }
+      li:first-child {
+        border-top: none;
+      }
+      li:nth-child(2n) {
+        background-color: white;
+      }
+    </style>	
     <title>Arima SDA Mobile</title>
 </head>
 
@@ -58,7 +95,7 @@
 	</nav>
 	
 
-    <div class="container text-center">
+   <!-- <div class="container text-center">
 		<h1>Arima SDA</h1>
 		<p class="lead">Welcome To Our Mobile App</p>
 		<div class="row">
@@ -83,13 +120,15 @@
 					<p>Seventh-day Adventists can truly be regarded as a worldwide family of Christian believers. We have 28 fundamental beliefs that are paramount to our faith.</p>
 				</div>
 			</div>				
-		</div>
+		</div> -->
+		<div id="rss-feeds"></div>
     </div>
 	<footer><p class="text-center">Copyright &copy; 2018, ARIMA SDA INC</p></footer>
     <script type="text/javascript" src="../cordova.js"></script>
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../src/jquery.rss.js"></script>
     <script type="text/javascript">
     </script>
 </body>
