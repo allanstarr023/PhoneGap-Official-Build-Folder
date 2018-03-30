@@ -13,7 +13,7 @@
       host: 'www.feedrapp.info',
       limit: null,
       key: null,
-      layoutTemplate: '<ul>{entries}</ul>',
+      layoutTemplate: '<ul class="rssUL">{entries}</ul>', /*Added by Allan 29.03.18 to style UL and not conflict with Menu List*/
       entryTemplate: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>',
       tokens: {},
       outputMode: 'json',

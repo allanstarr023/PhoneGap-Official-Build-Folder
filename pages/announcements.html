@@ -20,7 +20,7 @@
         $("#rss-feeds").rss("http://istarrconsulting.org/feed/announcementsFeed", {
           limit: 15,
 		  //entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
-		  entryTemplate:'<li class="rssList"><a class="rssFeed" href="{url}">{title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
+		  entryTemplate:'<li class="rssList"><a class="rssFeed" href="{url}" target="_blank">{title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
           effect: 'slideFastSynced'
         })
       })
@@ -34,12 +34,12 @@
       a:hover {
         text-decoration: none;
       }
-      ul {
+      .rssUL {
         list-style-type: none;
         margin: 0px;
         padding: 0px;
       }
-      li{
+      .rssList{
         padding: 10px;
         border-top: 1px dashed #AAA;
         background-color: #EFEFEF;
@@ -47,7 +47,7 @@
       li:first-child{
         border-top: none;
       }
-      li:nth-child(2n){
+      .rssUL li:nth-child(2n){
         background-color: white;
       }
     </style>	

@@ -54,7 +54,33 @@ body {
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
-/*Remove underline link from <a> on hover*/
-a:hover {
+/* Remove underline link from <a> on hover */
+/*a:hover {
 text-decoration: none;
+}*/
+
+/*RSS FEED STYLE*/
+.rssFeed {
+	color: #303030;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	
+}
+.rssUL {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.rssList{
+	padding: 10px;
+	border-top: 1px dashed #AAA;
+	background-color: #EFEFEF;
+}
+li:first-child{
+	
+}
+.rssUL li:nth-child(2n){
+	background-color: white;
 }
