@@ -10,47 +10,6 @@
     <link rel="stylesheet" type="text/css" href="../css/themes/bootstrap.min.united.css" />
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
-	<script type="text/javascript" src="../cordova.js"></script>
-	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
-	<script type="text/javascript" src="../src/jquery.rss.js"></script>
-	<script>
-      jQuery(function($) {
-        $("#rss-feeds").rss("http://istarrconsulting.org/feed/announcementsFeed", {
-          limit: 15,
-		  //entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
-		  entryTemplate:'<li class="rssList"><a class="rssFeed" href="{url}" target="_blank">{title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
-          effect: 'slideFastSynced'
-        })
-      })
-    </script>
-    <style type="text/css">
-      .rssFeed {
-        color: #303030;
-        text-decoration: none;
-		font-weight: bold;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-      .rssUL {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
-      }
-      .rssList{
-        padding: 10px;
-        border-top: 1px dashed #AAA;
-        background-color: #EFEFEF;
-      }
-      li:first-child{
-        border-top: none;
-      }
-      .rssUL li:nth-child(2n){
-        background-color: white;
-      }
-    </style>	
     <title>Arima SDA Mobile</title>
 </head>
 
@@ -128,12 +87,20 @@
     </div>
 	
 	<footer><p class="text-center">Copyright &copy; 2018, ARIMA SDA INC</p></footer>
-    <!-- <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
-	<script type="text/javascript" src="../src/jquery.rss.js"></script> -->
-    <script type="text/javascript">
-    </script>
+	<script type="text/javascript" src="../src/jquery.rss.js"></script>
+	<script>
+      jQuery(function($) {
+        $("#rss-feeds").rss("http://istarrconsulting.org/feed/announcementsFeed", {
+          limit: 15,
+		  //entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
+		  entryTemplate:'<li class="rssList"><a class="rssFeed" href="{url}" target="_blank">{title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
+          effect: 'slideFastSynced'
+        })
+      })
+    </script>	
 </body>
 </html>
