@@ -60,8 +60,12 @@ text-decoration: none;
 }*/
 
 /*RSS FEED STYLE*/
+.testerrr {
+    background-color: yellowgreen;
+}
+
 .rssFeed {
-	color: #303030;
+	color: lavenderblush;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 20px;
@@ -77,11 +81,15 @@ a:hover {
 .rssList{
 	padding: 10px;
 	border-top: 1px solid #AAA;
-	background-color: #EFEFEF;
+	/*background-color: #EFEFEF;*/
 }
 li:first-child{
 	
 }
 .rssUL li:nth-child(2n){
 	background-color: white;
+}
+
+.announcementHeader {
+	color:royalblue;
 }

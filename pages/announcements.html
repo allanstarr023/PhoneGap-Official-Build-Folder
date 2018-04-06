@@ -83,6 +83,9 @@
 				</div>
 			</div>				
 		</div> -->
+		<div class="container text-center">
+			<h1 class="announcementHeader">Announcements</h1>
+		</div>
 		<div id="rss-feeds"></div>
     </div>
 	
@@ -94,10 +97,10 @@
 	<script type="text/javascript" src="../src/jquery.rss.js"></script>
 	<script>
       jQuery(function($) {
-        $("#rss-feeds").rss("http://istarrconsulting.org/feed/announcementsFeed", {
+        $("#rss-feeds").rss("http://arimasda.org/feed", {
           limit: 15,
 		  //entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
-		  entryTemplate:'<li class="rssList"><a class="rssFeed" href="{url}" target="_blank">{title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
+		  entryTemplate:'<li class="rssList"><div class="list-group-item list-group-item-success testerrr"><a class="rssFeed" href="{url}" target="_blank">{title}</a></div><br/><div class="list-group-item list-group-item-success">{teaserImage}{shortBodyPlain}</div></li>',
           effect: 'slideFastSynced'
         })
       })
