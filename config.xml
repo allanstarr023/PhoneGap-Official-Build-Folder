@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.arimasda" version="1.0.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.arimasda" version="1.0.5">
   <name>arimasda</name>
   <description>Arima SDA App</description>
   <author href="http://arimasda.org" email="allanadimoolah@gmail.com">Allan Adimoolah</author>
@@ -40,7 +40,7 @@
   <plugin name="cordova-plugin-network-information" source="npm" spec="~2.0.1" />
   <plugin name="cordova-plugin-vibration" source="npm" spec="~3.1.0" />
 
-<!--THIS IS FOR ONE SIGNAL PUSH NOTIFICATIONS -->
+<!-- THIS IS FOR ONE SIGNAL PUSH NOTIFICATIONS -->
 <gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
 
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
