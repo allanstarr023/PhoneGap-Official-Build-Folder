@@ -46,15 +46,12 @@
 <preference name="phonegap-version" value="cli-6.5.0" />
 
 <preference name="android-build-tool" value="gradle" />
-<preference name="android-minSdkVersion" value="15" />
+<preference name="android-minSdkVersion" value="18" />
 
-<!-- Can omit if not targetting Windows Phone -->
-<preference name="windows-appx-target" value="8.1-phone" />
-<preference name="WindowsToastCapable" value="true" />
 
 <!-- Example: Sets all OneSignal notification's accent color to Green by default.  -->
 <!-- Color format is in ARGB. -->
-<meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FF9900FF" />
+<meta-data name="com.onesignal.NotificationAccentColor.DEFAULT" value="FF9900FF" /> 
 
 <icon src="icon.png" />
 
