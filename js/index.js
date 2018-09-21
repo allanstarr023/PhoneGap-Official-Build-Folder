@@ -44,3 +44,8 @@ document.addEventListener('deviceready', function () {
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
 }, false);
+
+// Added this to customize button click events 19.9.2018
+OneSignal.push(["addListenerForNotificationOpened", function(event) {
+  console.log("OneSignal notification clicked:", event);
+}]);

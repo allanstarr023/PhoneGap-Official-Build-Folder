@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.arimasda" version="1.0.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.arimasda" version="1.0.5">
   <name>arimasda</name>
   <description>Arima SDA App</description>
   <author href="http://arimasda.org" email="allanadimoolah@gmail.com">Allan Adimoolah</author>
@@ -51,6 +51,12 @@
 <!-- Can omit if not targetting Windows Phone -->
 <preference name="windows-appx-target" value="8.1-phone" />
 <preference name="WindowsToastCapable" value="true" />
+
+<!-- Example: Sets all OneSignal notification's accent color to Green by default.  -->
+<!-- Color format is in ARGB. -->
+<meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FF9900FF" />
+
+<icon src="icon.png" />
 
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
